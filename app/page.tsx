@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { ArticleCard, ArticleCardSkeleton } from './components/ArticleCard'
 import { BatchAnalyzer } from './components/BatchAnalyzer'
 import { Dashboard } from './components/Dashboard'
+import { DeepVerify } from './components/DeepVerify'
 import { RefreshCw, Filter, Search } from 'lucide-react'
 
 interface Article {
@@ -180,6 +181,8 @@ export default function Home() {
         )}
 
         {activeTab === 'analyze' && <BatchAnalyzer />}
+
+        {activeTab === 'deepverify' && <DeepVerify />}
 
         {activeTab === 'dashboard' && <Dashboard />}
       </main>

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Shield, Menu, X, Moon, Sun, Newspaper, FileSearch, BarChart3, Bell } from 'lucide-react'
+import { Shield, Menu, X, Moon, Sun, Newspaper, FileSearch, BarChart3, Bell, Microscope } from 'lucide-react'
 
 interface HeaderProps {
   activeTab: string
@@ -19,6 +19,7 @@ export function Header({ activeTab, onTabChange }: HeaderProps) {
 
   const tabs = [
     { id: 'feed', label: 'News Feed', icon: Newspaper },
+    { id: 'deepverify', label: 'Deep Verify', icon: Microscope },
     { id: 'analyze', label: 'Batch Analyze', icon: FileSearch },
     { id: 'dashboard', label: 'Dashboard', icon: BarChart3 },
   ]

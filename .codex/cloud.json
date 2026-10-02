@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "Synthora demo",
+  "container": ".devcontainer/devcontainer.json",
+  "runtime": "node22",
+  "install": "bash .codex/setup.sh",
+  "check": "bash .codex/check.sh",
+  "start": "bash .codex/start.sh",
+  "test_scope": "source/configuration checks; no isolated application suite",
+  "limitations": [],
+  "required_network_domains": [
+    "registry.npmjs.org"
+  ]
+}

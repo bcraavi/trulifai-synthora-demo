@@ -33,3 +33,14 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cloud development local artifacts
+.venv/
+node_modules/
+__pycache__/
+.dart_tool/
+.wrangler/
+.cloud-artifacts/
+.env
+.env.*
+!.env.example
